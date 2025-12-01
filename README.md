@@ -1,2 +1,1 @@
-# Modku
-Latihan membuat modku
+# Belajar coding
