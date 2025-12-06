@@ -1,5 +1,5 @@
 [
-//Keajaiban Dunia 
+#Keajaiban Dunia 
 	{
 		"name": "Palace",
 		"isNationalWonder": true,
@@ -28,7 +28,7 @@
 	    "quote": "'Tinta seorang ilmuwan lebih mulia daripada darah seorang syuhada.'",
 		"requiredTech": "Arsitektur Suci",
 	},
-//Permulaan
+#Permulaan
 	{
 		"name": "Balai Desa",
 		"culture": 1,
@@ -57,7 +57,7 @@
 		"maintenance": 1,
 		"uniques": ["Destroyed when the city is captured"]
 	},
-//Era Kuno
+#Era Kuno
 	{
 		"name": "Lumbung",
 		"food": 1,
@@ -121,7 +121,7 @@
 		"requiredBuilding": "Pagar Kayu",
 		"uniques": ["Destroyed when the city is captured", "[3]% City Strength from defensive buildings"]
 	},
-//Era Klasik
+#Era Klasik
 	{
 		"name": "Perpustakaan",
 		"science": 1,
@@ -208,7 +208,7 @@
 		"requiredNearbyImprovedResources": ["Ivory","Bijih Emas"],
 		"uniques": []
 	},
-//Era Abad Pertengahan
+#Era Abad Pertengahan
 	{
 		"name": "Benteng Besi",
 		"cityStrength": 3,
@@ -220,7 +220,7 @@
 		"requiredBuilding": "Tembok Batu",
 		"uniques": ["Destroyed when the city is captured", "[7]% City Strength from defensive buildings"]
 	},
-//Era Pembaharuan
+#Era Pembaharuan
 	{
 		"name": "Sekolah Negeri",
 		"science": 2,
@@ -281,7 +281,7 @@
 		"requiredTech": "Biro Pengetahuan",
 		"requiredBuilding": "Sekolah Negeri"
 	},
-//Era Industri
+#Era Industri
 	{
 		"name": "Universitas",
 		"science": 3,
