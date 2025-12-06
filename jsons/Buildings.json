@@ -1,0 +1,334 @@
+[
+//Keajaiban Dunia 
+	{
+		"name": "Palace",
+		"isNationalWonder": true,
+		"production": 2,
+		"science": 2,
+		"gold": 2,
+		"culture": 1,
+		"cityStrength": 2,
+		"cost": 1,
+		"uniques": ["Indicates the capital city"]
+	},
+	{
+		"name": "Candi Borobudur",
+		"isWonder": true,
+		"faith": 2,
+		"culture": 2,
+		"uniques": ["Gain [75]-[150] [Faith]", "Gain [100]-[125] [Culture]"],
+		"quote": "'Di dalam keheningan batu, tercipta suara abadi tentang kebijaksanaan dan damai.'"
+		"requiredTech": "Arsitektur Suci",
+	},
+	{
+		"name": "Bayt Al-Hikmah",
+		"isWonder": true,
+		"science": 1,
+		"uniques": ["[+1 Science] <for [City-States] Civilizations>", "[+1 Science] from each Trade Route", "[+1 Culture] from every [Perpustakaan]", "[+1 Faith] from every [Perpustakaan]"],
+	    "quote": "'Tinta seorang ilmuwan lebih mulia daripada darah seorang syuhada.'",
+		"requiredTech": "Arsitektur Suci",
+	},
+//Permulaan
+	{
+		"name": "Balai Desa",
+		"culture": 1,
+		"cost": 40,
+		"hurryCostModifier": 20,
+		"maintenance": 1,
+		"requiredTech": "Pemukiman",
+		"uniques": ["[+1 Happiness] <in cities with less than [6] [Population]>", "[+1 Culture] [in this city] <if [Monument] is constructed>", "Cannot build [Settler] units <if [Balai Desa] is not constructed>"]
+	},
+	{
+		"name": "Monument",
+		"culture": 1,
+		"cost": 25,
+		"hurryCostModifier": 0,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Tes",
+		"culture": 100,
+		"gold": 100,
+		"production": 100,
+		"science": 100,
+		"cost": 5,
+		"hurryCostModifier": 0,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured"]
+	},
+//Era Kuno
+	{
+		"name": "Lumbung",
+		"food": 1,
+		"maintenance": 1,
+		"hurryCostModifier": 15,
+		"uniques": ["[+1 Food] from every [Wheat]"],
+		"requiredTech": "Pertanian"
+	},
+	{
+		"name": "Tempat Suci",
+		"faith": 1,
+		"maintenance": 1,
+		"hurryCostModifier": 15,
+		"requiredTech": "Tembikar"
+	},
+	{
+		"name": "Pasar Tradisional",
+		"gold": 1,
+		"food": 1,
+		"percentStatBonus": {"gold": 15},
+		"hurryCostModifier": 8,
+		"requiredTech": "Tembikar"
+	},
+	{
+		"name": "Sumur",
+		"maintenance": 1,
+		"hurryCostModifier": 15,
+		"uniques": ["Only available <within [3] tiles of a [Fresh Water]>", "[+1 Food] <during We Love The King Day>", "[+1 Food] <in [Farm] tiles> <in tiles adjacent to [City center] tiles>"],
+		"requiredTech": "Tembikar"
+	},
+	{
+		"name": "Kandang Ternak",
+		"maintenance": 1,
+		"hurryCostModifier": 15,
+		"uniques": ["[+1 Food] from every [Sheep]", "[+1 Production] from every [Horses]"],
+		"requiredTech": "Peternakan"
+	},
+	{
+		"name": "Pagar Kayu",
+		"cityStrength": 1,
+		"cityHealth": 5,
+		"hurryCostModifier": 15,
+		"requiredTech": "Pengolahan Kayu",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Pos Jaga",
+		"cityHealth": 5,
+		"hurryCostModifier": 15,
+	   	"maintenance": 1,
+		"requiredTech": "Penjagaan Wilayah",
+		"uniques": ["Destroyed when the city is captured", "Free [Warrior] appears"]
+	},
+	{
+		"name": "Tembok Batu",
+		"cityStrength": 2,
+		"cityHealth": 8,
+		"hurryCostModifier": 20,
+		"requiredTech": "Pekerjaan Tukang",
+		"maintenance": 1,
+		"requiredBuilding": "Pagar Kayu",
+		"uniques": ["Destroyed when the city is captured", "[3]% City Strength from defensive buildings"]
+	},
+//Era Klasik
+	{
+		"name": "Perpustakaan",
+		"science": 1,
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["[+1 Science] <if [Monument] is constructed>"],
+		"requiredTech": "Penulisan"
+	},
+	{
+		"name": "Sekolahan",
+		"science": 1,
+		"maintenance": 1,
+		"hurryCostModifier": 30,
+		"uniques": ["[+1 Science] <in cities with less than [5] [Population]>", "[+2 Science] <in cities with at least [5] [Population]>"],
+		"requiredTech": "Filsafat"
+		"requiredBuilding": "Perpustakaan"
+	},
+	{
+		"name": "Pelabuhan",
+		"hurryCostModifier": 25,
+		"maintenance": 2,
+//		"requiredBuilding": "Harbor",
+		"uniques": ["[+1 Food] from [Water resource] tiles [in this city]",
+			"Must be next to [Coast]", "Connects trade routes over water", "[+1 Gold] from each Trade Route"],
+		"requiredTech": "Navigasi"
+	},
+	{
+		"name": "Sekolah Menengah",
+		"science": 1,
+		"happiness": 1,
+		"maintenance": 1,
+		"hurryCostModifier": 40,
+		"uniques": ["[+1 Science] per [4] population [in this city]"],
+		"requiredTech": "Sistem Pendidikan",
+		"requiredBuilding": "Sekolahan"
+	},
+	{
+		"name": "Pasar",
+		"gold": 3,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 10,
+		"percentStatBonus": {"gold": 25},
+		"requiredTech": "Perdagangan"
+		"requiredBuilding": "Pasar Tradisional"
+	},
+	{
+		"name": "Jembatan",
+		"maintenance": 1,
+		"hurryCostModifier": 10,
+		"requiredTech": "Teknik Sipil",
+		"uniques": ["Roads connect tiles across rivers <in [in this city] cities>"]
+	},
+	{
+		"name": "Kantor Pajak",
+		"hurryCostModifier": 20,
+		"maintenance": 2,
+		"requiredTech": "Administrasi",
+		"uniques": ["[+2 Gold] per [3] population [in this city]", "[10]% Unhappiness from [Population] [in this city] <in cities with less than [8] [Population]>"]
+	},
+	{
+		"name": "Menara Pengawas",
+		"maintenance": 1,
+		"hurryCostModifier": 10,
+		"requiredTech": "Menara Pengawas",
+		"uniques": ["Destroyed when the city is captured", "[10]% Strength for cities"]
+	},
+    {
+		"name": "Pos Distribusi Produksi",
+		"cost": 150,
+		"maintenance": 2,
+		"hurryCostModifier": 30,
+		"uniques": ["[15]% [Production]", "[-1 Production] [in this city]", "[-2 Production] [in this city] <in cities connected to the capital>", "[+1 Production] [in capital]", "[+2 Production] [in capital] <in cities connected to the capital>", "Excess Food converted to Production when under construction", "Unbuildable <in [Capital] cities>", "Unavailable <if [Istana Perwakilan] is constructed>"],
+		"requiredTech": "Pengelolaan Logistik",
+		"civilopediaText": [
+		{ "text": "Bangunan ini memindahkan produksi dari kota ke ibukota."},
+		{ "text": "Hanya bisa di bangun di kota-kota"},
+		{ "text": "Serta tidak dapat membangun Istana Perwakilan jika bangunan ini telah di bangun"}]
+	},
+	{
+		"name": "Tungku Peleburan",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"requiredTech": "Pandai Besi",
+		"requiredNearbyImprovedResources": ["Ivory","Bijih Emas"],
+		"uniques": []
+	},
+//Era Abad Pertengahan
+	{
+		"name": "Benteng Besi",
+		"cityStrength": 3,
+		"cityHealth": 12,
+		"hurryCostModifier": 25,
+		"requiredTech": "Pandai Besi",
+		"maintenance": 1,
+		"requiredResource": "Iron",
+		"requiredBuilding": "Tembok Batu",
+		"uniques": ["Destroyed when the city is captured", "[7]% City Strength from defensive buildings"]
+	},
+//Era Pembaharuan
+	{
+		"name": "Sekolah Negeri",
+		"science": 2,
+		"specialistSlots": {"Scientist": 1},
+		"maintenance": 2,
+		"hurryCostModifier": 45,
+		"uniques": ["[+1 Science] from every [Scientist]", "[+1 Science] from every [Perpustakaan]"],
+		"requiredTech": "Pendidikan Formal",
+		"requiredBuilding": "Sekolah Menengah"
+	},
+	{
+		"name": "Percetakan Uang",
+		"gold": 8,
+		"hurryCostModifier": 15,
+		"requiredBuilding": "Pasar",
+		"requiredTech": "Lembaga Keuangan"
+		"uniques": []
+	},
+	{
+		"name": "Bank",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"gold": 30},
+		"requiredBuilding": "Pasar",
+		"requiredTech": "Perbankan"
+	},
+	{
+		"name": "Istana Perwakilan",
+		"production": 1,
+		"science": 1,
+		"gold": 1,
+		"culture": 1,
+		"faith": 1,
+		"happiness": 1,
+		"cost": 300,
+		"maintenance": 4,
+		"hurryCostModifier": 45,
+		"uniques": ["Limited to [1] per Civilization", "Moves to new capital when capital changes", "Unbuildable <in [Capital] cities>", "Unavailable <if [Pos Distribusi Produksi] is constructed>", "Unavailable <if [Distribusi Produksi Daerah] is constructed>"],
+		"requiredTech": "Pemerintahan"
+	},
+	{
+		"name": "Bengkel Logam",
+		"production": 2,
+		"percentStatBonus": {"production": 3},
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"requiredResource": "Iron",
+		"requiredTech": "Ilmu Terapan",
+		"uniques": ["Provides [2] [Logam]"]
+	},
+	{
+		"name": "Kantor Studi",
+		"percentStatBonus": {"science": 10},
+		"maintenance": 2,
+		"hurryCostModifier": 45,
+		"uniques": ["Limited to [1] per Civilization", "Enables Research agreements"],
+		"requiredTech": "Biro Pengetahuan",
+		"requiredBuilding": "Sekolah Negeri"
+	},
+//Era Industri
+	{
+		"name": "Universitas",
+		"science": 3,
+		"happiness": 1,
+		"maintenance": 3,
+		"hurryCostModifier": 45,
+		"percentStatBonus": {"science": 5},
+		"uniques": ["[+1 Happiness] <in cities with less than [9] [Population]>"],
+		"requiredTech": "Ilmu Tinggi",
+		"requiredBuilding": "Kantor Studi"
+	},
+	{
+		"name": "Factory",
+		"production": 3,
+		"percentStatBonus": {"production": 7},
+		"specialistSlots": {"Engineer": 2},
+		"maintenance": 3,
+		"hurryCostModifier": 0,
+		"requiredTech": "Revolusi Industri"
+	},
+	{
+		"name": "Hotel",
+		"happiness": 2,
+		"gold": 2,
+		"culture": 2,
+		"maintenance": 3,
+		"hurryCostModifier": 15,
+		"requiredTech": "Pariwisata",
+		"uniques": ["[3]% [Culture] from every [Wonders]"]
+	},
+	{
+		"name": "Stasiun Kereta",
+		"maintenance": 2,
+		"hurryCostModifier": 45,
+		"uniques": ["[10]% [Production] [in this city]", "[+1 Gold] <in cities connected to the capital>"],
+		"requiredTech": "Rel Kereta"
+	},
+	{
+		"name": "Distribusi Produksi Daerah",
+		"maintenance": 3,
+		"hurryCostModifier": 60,
+		"uniques": ["[15]% [Production]", "[-2 Production] [in this city]", "[-3 Production] [in this city] <in cities connected to the capital>", "[+2 Production] [in capital]", "[+3 Production] [in capital] <in cities connected to the capital>", "Excess Food converted to Production when under construction", "Unbuildable <in [Capital] cities>", "Unavailable <if [Istana Perwakilan] is constructed>"],
+		"requiredTech": "Administrasi Logistik",
+		"requiredBuilding": "Pos Distribusi Produksi",
+		"civilopediaText": [
+		{ "text": "Bangunan ini memindahkan produksi dari kota ke ibukota."},
+		{ "text": "Hanya bisa di bangun di kota-kota"},
+		{ "text": "Serta tidak dapat membangun Istana Perwakilan jika bangunan ini telah di bangun"}]
+	}
+]

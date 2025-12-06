@@ -1,0 +1,140 @@
+[
+    {
+        "name": "Kapitalisme",
+        "era": "Era Pembaharuan",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 10,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 10
+        },
+        "uniques": [
+            "[20]% [Gold] [in all cities]",
+            "[+2 Gold] from each Trade Route",
+            "[+2 Production] from each Trade Route",
+            "[+1 Gold] from every specialist [in all cities]",
+            "Only available <before adopting [Komunisme]>"
+        ],
+        "policies": [
+            {
+                "name": "Pasar Bebas",
+                "uniques": [
+                    "[+1 Gold] from every specialist [in all cities]",
+                    "[+1 Gold] from all [Pasar] buildings",
+                    "[-1 Happiness] [in this city] <if [Pasar] is not constructed>"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Privatisasi",
+                "uniques": [
+                    "[+1 Production] from all [Factory] buildings",
+                    "[+2 Gold] from all [Factory] buildings",
+                    "[-2 Happiness] <if [Factory] is constructed>"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Liberalisasi Ekonomi",
+                "uniques": [
+                    "[+1 Science] from all [Pasar] buildings",
+                    "[+1 Production] from all [Bank] buildings",
+                    "[-10]% [Culture] [in all cities]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Perdagangan Global",
+                "uniques": [
+                    "[+2 Gold] from each Trade Route",
+                    "[+1 Science] from each Trade Route",
+                    "[-1 Happiness] [in all cities]"
+                ],
+                "row": 1,
+                "column": 7
+            },
+            {
+                "name": "Kapitalisme Complete",
+                "uniques": [
+                    "[15]% [Gold] from Trade Routes",
+                    "[10]% [Science] [in all cities]",
+                    "[+1 Production] from each Trade Route",
+                    "[+1 Gold] from every specialist [in all cities]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Komunisme",
+        "era": "Era Pembaharuan",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 10,
+            "Diplomatic": 10,
+            "Domination": 0,
+            "Scientific": 5
+        },
+        "uniques": [
+            "[+1 Production] [in all cities]",
+            "[+1 Food] [in all cities]",
+            "[-50]% Food consumption by specialists [in all cities]",
+            "[+2 Science] per [6] population [in this city]",
+            "Only available <before adopting [Kapitalisme]>"
+        ],
+        "policies": [
+            {
+                "name": "Kepemilikan Bersama",
+                "uniques": [
+             "[+1 Production] [in all cities]",
+             "[+1 Food] from every specialist [in all cities]",
+             "[-1 Gold] [in all cities]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Distribusi Merata",
+                "uniques": [
+             "[+1 Production] [in all cities]",
+             "[+1 Food] [in all cities]",
+             "[-1 Gold] [in all cities]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Kontrol Negara",
+                "uniques": [
+             "[+2 Production] from all [Factory] buildings",
+             "[+1 Science] from every specialist [in all cities]",
+             "[-1 Happiness] [in this city] <in cities with less than [10] [Population]>"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Kolektivisasi",
+                "uniques": [
+             "[+2 Production] [in all cities]",
+             "[+1 Science] from every specialist [in all cities]",
+             "[+1 Happiness] [in this city] <if [Pasar] is not constructed>"
+                ],
+                "row": 1,
+                "column": 7
+            },
+            {
+                "name": "Komunisme Complete",
+                "uniques": [
+                    "[+2 Production] [in all cities]",
+                    "[10]% [Science] [in all cities]",
+                    "[+1 Happiness] per [5] population [in all cities]",
+                    "[+1 Happiness] [in this city] <if [Pasar] is not constructed>"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,30 @@
+[
+	{
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
+		"cost": 35
+	},
+    {
+        "name": "Settler",
+        "unitType": "Civilian",
+        "movement": 2,
+        "uniques": ["Founds a new city <by consuming this unit>"]
+		"cost": 70
+    },
+	{
+		"name": "Warrior",
+		"unitType": "Prajurit",
+		"movement": 2,
+		"strength": 25,
+		"cost": 25,
+//		"obsoleteTech": "Metal Casting",
+//		"upgradesTo": "Swordsman",
+		"uniques": ["[+500]% Strength <vs cities> <when attacking>"],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+			{"text": "This is your basic, club-swinging fighter."}
+		]
+	}
+]

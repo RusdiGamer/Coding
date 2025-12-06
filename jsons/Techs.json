@@ -1,0 +1,287 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "Era Kuno",
+		"techCost": 20,
+		"buildingCost": 25,
+		"wonderCost": 180,
+		"techs": [
+			{
+				"name": "Pemukiman",
+				"row": 5,
+				"uniques": ["Starting tech"]
+				"quote": "'Di antara ladang dan batu, manusia mulai menyebut itu rumah.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Era Kuno",
+		"techCost": 20,
+		"buildingCost": 25,
+		"wonderCost": 100,
+		"techs": [
+			{
+				"name": "Pertanian",
+				"row": 5,
+				"quote": "'Pertanian adalah akar dari sebuah peradapan.'",
+				"prerequisites": ["Pemukiman"]
+			},
+			{
+				"name": "Tembikar",
+				"row": 1,
+				"prerequisites": ["Pemukiman"],
+				"quote": "'Saat tanah liat dibentuk, budaya ikut tercipta.'"
+			},
+			{
+				"name": "Peternakan",
+				"row": 7,
+				"prerequisites": ["Pemukiman"],
+				"quote": "'Bangsa yang menjinakkan hewan, Menjinakkan nasibnya sendiri.'"
+			},
+			{
+				"name": "Pertambangan",
+				"row": 10,
+				"prerequisites": ["Pemukiman"],
+				"quote": "'Di bawah tanah, kekayaan peradaban menunggu untuk di temukan.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "Era Kuno",
+		"techCost": 25,
+		"buildingCost": 28,
+		"wonderCost": 110,
+		"techs": [
+			{
+				"name": "Jalur Desa",
+				"row": 3,
+				"prerequisites": ["Pertanian", "Tembikar"],
+				"quote": "'Tak ada desa tanpa jalan, tak ada hidup tanpa arah.'"
+			},
+			{
+				"name": "Pengolahan Kayu",
+				"row": 7,
+				"prerequisites": ["Peternakan"],
+				"quote": "'Dari pohon, manusia belajar membangun.'"
+			},
+			{
+				"name": "Penjagaan Wilayah",
+				"row": 5,
+				"prerequisites": ["Pertanian"],
+				"quote": "'Sebuah desa tanpa penjagaan hanyalah undangan bagi kekacauan.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Era Kuno",
+		"techCost": 30,
+		"buildingCost": 30,
+		"wonderCost": 120,
+		"techs": [
+			{
+				"name": "Pekerjaan Tukang",
+				"row": 8,
+				"prerequisites": ["Pengolahan Kayu", "Pertambangan"],
+				"quote": "'Dinding pertama bukan di bangun untuk menang, tapi untuk bertahan.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 4,
+		"era": "Era Klasik",
+		"techCost": 40,
+		"buildingCost": 40,
+		"wonderCost": 135,
+		"techs": [
+			{
+				"name": "Penulisan",
+				"row": 1,
+				"prerequisites": ["Jalur Desa"],
+				"quote": "'Tulisan adalah jembatan antara pikiran dan keabadian.'"
+			},
+			{
+				"name": "Administrasi",
+				"row": 4,
+				"prerequisites": ["Jalur Desa"],
+				"quote": "'Pemerintahan yang besar dimulai dari pengelolaan yang kecil.'"
+			},
+			{
+				"name": "Perdagangan",
+				"row": 3,
+				"prerequisites": ["Jalur Desa"],
+				"quote": "'Jika kamu ingin cepat, pergilah sendiri. Jika kamu ingin jauh, berdaganglah bersama.'"
+			},
+			{
+				"name": "Teknik Sipil",
+				"row": 2,
+				"prerequisites": ["Jalur Desa"],
+				"quote": "'Sungai memisahkan tanah, tetapi manusia memjebatani perbedaan.'"
+			},
+			{
+				"name": "Menara Pengawas",
+				"row": 5,
+				"prerequisites": ["Penjagaan Wilayah", "Pekerjaan Tukang"],
+				"quote": "'Ia yang melihat lebih dulu, memiliki keunggulan sebelum bertindak.'"
+			},
+		]
+	},
+	{
+		"columnNumber": 5,
+		"era": "Era Klasik",
+		"techCost": 50,
+		"buildingCost": 55,
+		"wonderCost": 137,
+		"techs": [
+			{
+				"name": "Filsafat",
+				"row": 1,
+				"prerequisites": ["Penulisan"],
+				"quote": "'Yang tidak merefleksikan hidupnya, tidak layak untuk hidup.'"
+			},
+			{
+				"name": "Navigasi",
+				"row": 3,
+				"prerequisites": ["Perdagangan", "Teknik Sipil"],
+				"quote": "'Laut menghubungkan lebih banyak daratan daripada jalan.'"
+			},
+			{
+				"name": "Pengelolaan Logistik",
+				"row": 4,
+				"prerequisites": ["Administrasi"],
+				"quote": "'Barang bukan sekadar ditumpuk, tapi diarahkan ke tempat yang paling membutuhkan.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 6,
+		"era": "Era Klasik",
+		"techCost": 60,
+		"buildingCost": 70,
+		"wonderCost": 140,
+		"techs": [
+			{
+				"name": "Sistem Pendidikan",
+				"row": 1,
+				"prerequisites": ["Filsafat"],
+				"quote": "'Didiklah anak-anakmu, karena mereka akan hidup di zaman yang berbeda dengan zamanmu.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 7,
+		"era": "Era Pertengahan",
+		"techCost": 75,
+		"buildingCost": 85,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Arsitektur Suci",
+				"row": 1,
+				"prerequisites": ["Sistem Pendidikan"],
+				"quote": "'Borobudur adalah alam semesta yang dibangun dari batu.'"
+			},
+			{
+				"name": "Pandai Besi",
+				"row": 10,
+				"prerequisites": ["Menara Pengawas"],
+				"quote": "'Palu dan bara menempa bukan hanya besi, tapi juga nasib sebuah bangsa.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Era Pembaharuan",
+		"techCost": 30,
+		"buildingCost": 60,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Pendidikan Formal",
+				"row": 1,
+				"prerequisites": ["Arsitektur Suci"],
+				"quote": "'Pendidikan adalah senjata paling ampuh untuk mengubah dunia.'"
+			},
+			{
+				"name": "Lembaga Keuangan",
+				"row": 3,
+				"prerequisites": ["Navigasi"],
+				"quote": "'Uang tanpa sistem hanyalah angka; dengan sistem, ia jadi kuasa.'"
+			},
+			{
+				"name": "Pemerintahan",
+				"row": 5,
+				"prerequisites": ["Pengelolaan Logistik", "Menara Pengawas"],
+				"quote": "'Pengetahuan yang tidak digunakan, adalah beban. Yang diterapkan, adalah kekuatan.'"
+			},
+			{
+				"name": "Ilmu Terapan",
+				"row": 10,
+				"prerequisites": ["Pandai Besi"],
+				"quote": "'Pengetahuan yang tidak digunakan, adalah beban. Yang diterapkan, adalah kekuatan.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 9,
+		"era": "Era Pembaharuan",
+		"techCost": 30,
+		"buildingCost": 60,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Biro Pengetahuan",
+				"row": 1,
+				"prerequisites": ["Pendidikan Formal"],
+				"quote": "'Ilmu pengetahuan yang tidak diatur akan hilang, dan yang tidak dibagikan akan padam.'"
+			},
+			{
+				"name": "Perbankan",
+				"row": 3,
+				"prerequisites": ["Lembaga Keuangan"],
+				"quote": "'Bank adalah mesin yang mmenggerakkan roda perdagangan tanpa meranjak dari tempatnya.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 10,
+		"era": "Era Industri",
+		"techCost": 30,
+		"buildingCost": 60,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Ilmu Tinggi",
+				"row": 1,
+				"prerequisites": ["Biro Pengetahuan"],
+				"quote": "'Akar pendidikan itu pahit, tapi buahnya manis.'"
+			},
+			{
+				"name": "Administrasi Logistik",
+				"row": 4,
+				"prerequisites": ["Ilmu Terapan", "Pemerintahan"],
+				"quote": "'Kemajuan suatu bangsa tak hanya diukur dari kekuatan senjatanya, tapi dari seberapa cepat dan teraturnya logistik tiba di garis depan.'"
+			},
+			{
+				"name": "Revolusi Industri",
+				"row": 10,
+				"prerequisites": ["Ilmu Terapan"],
+				"quote": "'Revolusi Industri membebaskan manusia dari otot, dan mengikatnya pada mesin.'"
+			},
+			{
+				"name": "Pariwisata",
+				"row": 3,
+				"prerequisites": ["Perbankan"],
+				"quote": "'Pemandangan yang paling indah adalah dunia, dilihat dari tempat yang belum pernah kita kunjungi.'"
+			},
+			{
+				"name": "Rel Kereta",
+				"row": 2,
+				"prerequisites": ["Perbankan", "Biro Pengetahuan"],
+				"quote": "'Dulu perjalanan butuh musim, kini cukup satu jadwal keberangkatan.'"
+			}
+		]
+	}
+]
